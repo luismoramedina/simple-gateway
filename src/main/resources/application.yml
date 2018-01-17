@@ -1,0 +1,15 @@
+zuul.routes:
+   users:
+      url: http://localhost:8088/
+      stripPrefix: false
+   cards:
+      url:  http://localhost:8089/
+      stripPrefix: true
+
+logging.level.org.springframework.cloud.netflix.zuul: DEBUG
+
+zuul.debug.request: true
+zuul.debug.parameter: true
+zuul.include-debug-header: true
+
+endpoints.trace.sensitive: false

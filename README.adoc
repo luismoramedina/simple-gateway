@@ -1,0 +1,20 @@
+= Simple gateway
+
+Simple zuul based gateway to handle request to micro services.
+
+Adds an add-on to list and link swagger apis behind the gateway
+
+== Configure
+
+You must create some micro services and add routing configuration in application.yml
+
+Yo can set the swagger suffix url with the 'swagger.url.suffix' property
+ if it is different from 'swagger-ui.html'.
+
+== Run
+
+mvn spring-boot:run
+
+== Test
+
+google-chrome http://localhost:8080/console/apis
