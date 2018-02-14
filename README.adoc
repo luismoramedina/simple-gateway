@@ -18,3 +18,7 @@ mvn spring-boot:run
 == Test
 
 google-chrome http://localhost:8080/console/apis
+
+== Docker
+
+docker build . -t simple-gateway
